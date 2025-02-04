@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url("kong&godzilla.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+nav{
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+    border-radius: 10px;
+}
+.nav_options ul,li{
+    display: flex;
+}
+.nav_options li{
+    margin-left: 10px;
+    position: relative;
+    list-style: none;
+    color: silver;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+.nav_options a{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+.nav_options li::after{
+    content: "";
+    position: absolute;
+    background-color: #0ef;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: all 0.5s ease;
+}
+.nav_options li:hover::after{
+    width: 100%;
+}
+
+.body_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20%;
+}
+.our_shop{
+    width: 25%;
+    backdrop-filter: blur(8px);
+    color: whitesmoke;
+    border-radius: 20px;
+}
+.body_section button{
+    background-color: rgb(173, 49, 173);
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.direct{
+    display: flex;
+    margin-top: 8%;
+    
+}
+.collect{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    gap: 5px;
+}
+.collect img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+.collect img:hover{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.container {
+    max-width: 400px;
+    margin-top: 10%;
+    margin-left: 30%;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.error {
+    color: red;
+    font-size: 12px;
+}
+.success {
+    color: green;
+    font-size: 14px;
+}
+.container h1{
+    margin-top: 20px;
+}
+#myForm{
+    margin-top: 10px;
+}
+#myForm label,input,p{
+    margin-top: 10px;
+}
+#myForm input{
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#myForm button{
+    cursor: pointer;
+    margin: 10px 70px;
+    padding: 5px 30px;
+    border-radius: 3px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+#myForm button:hover{
+    background-color: rgb(58, 14, 99);
+    color: white;
+}
+
+
+.menuline{
+    height: 3px;
+    width: 20px;
+    margin-bottom: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+.cross{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+@media all and (max-width:767px){
+    nav,.nav_options ul{
+        flex-direction: column;
+    }
+    .nav_options{
+        margin-top: 40px;
+        display: none;
+    }
+    .nav_options li{
+        padding: 10px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 13px;
+    }
+    .cross{
+
+        display: none;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+    .logo{
+        position: absolute;
+        left: 25px;
+        top: 7px;
+    }
+    .body_section{
+        display: block;
+        text-align: center;
+    }
+    .our_shop{
+        margin-left: 8vh;
+        margin-top: 30vh;
+        width: 80%;
+    }
+    .our_shop a{
+        margin-top: 10vh;
+    }
+
+    .direct{
+        display: flex;
+        margin-top: 10%;
+        justify-content: center;
+        margin-right: 20vh;
+    }
+    .collect{
+        margin-left: 30px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+    .collect img{
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid white;
+        cursor: pointer;
+    }
+    .container{
+        margin-left: 6%;
+    }
+
+
+
+}
+

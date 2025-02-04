@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+<body style="background-image: url(godzilla.jpg);">
+    <div>
+        <nav>
+            <div>
+                <h1 class="logo">Gaming Top</h1>
+            </div>
+            <div class="nav_options">
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="collection.html"><li>Collections</li></a>
+                    <a href="contact.html"><li>Contact Us</li></a>
+                </ul>
+            </div>
+            <div class="menu" onclick="shownav()">
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+                <div class="menuline"></div>
+                    </div>
+                    <div class="cross" onclick="closenav()"><h2>x</h2></div>
+                </nav>
+            </div>
+    </nav>
+</div>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="myForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+            <p class="error" id="nameError"></p>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Yor E-mail">
+            <p class="error" id="emailError"></p>
+            
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your phone number">
+            <p class="error" id="phoneError"></p>
+            
+            <button type="submit">Submit</button>
+            <p class="success" id="successMessage"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
